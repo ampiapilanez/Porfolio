@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+    padding: border-box;
+}
+body {
+    background-color: blanchedalmond0;
+}
+a { 
+    text-decoration: none;
+    font-family: "Archivo", sans-serif; 
+    color: rgb(38, 35, 33);
+    
+}
+p.encabezado {
+    background-color:  rgb(0, 0, 0);
+    color: rgb(175, 76, 91);
+    display: flex;
+    justify-content:end;
+    width: 100%;
+    font-size: 0.7rem;
+    font-style: oblique;
+    }
+body {
+    background-color: rgb(243, 239, 230);
+}
+
+nav ul {
+    background-color: rgb(194, 136, 145) ;
+    text-align: center;
+    font-weight:600;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    padding: 0rem 2.5rem; 
+}
+p {
+    font-size: 1rem;
+    font-family: "Archivo", sans-serif;
+}
+.fotoPrincipal {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    object-fit: cover;
+    margin: 0;
+    width: 100%; 
+}
+.contenedorImagen {
+    color: rgb(135, 53, 65);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+h2.contenedorImagen {
+    margin-top: 2rem;
+    font-size: 100fr;
+}
+.textoSuper {
+    font-size: 3rem;
+    margin: 0%;
+}
+.tachado {
+    text-decoration: line-through;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5fr;
+    top: 20px;
+    left: 50%;
+}
+.superponer {
+    background-color: black;
+    padding: 3rem;
+}
+
+.cuadricula{
+    background-color: rgb(187, 182, 182);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    margin: 2rem;
+    text-align: center;
+}
+.mitad {
+    display:flex;
+    gap: 30px;
+    align-items:center;
+}
+.mitadTexto {
+    flex: 1;
+    padding: 2rem;
+    text-align: start;
+}
+.mitadImagen {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+.fotoPerfil {
+    width: 100%;
+    padding: 10%;
+}
+a.boton {
+    color: rgb(135, 53, 65);
+    text-decoration:double;
+}
+.foto {
+    margin-top: 20px;
+    width: 50%;
+}
+.porfolio{
+    display: grid;
+    grid-template: repeat(2, 1fr);   
+    gap: 10px;
+}
+.formulario {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align:left;
+    list-style-type: none;
+}
+footer {
+    background-color: rgb(194, 136, 145) ;
+}
+/*---------------------768px-------------------------*/
+@media screen and (min-width: 768px) {
+    .textoSuper {
+    font-size: 3.5rem;
+}
+.tachado {
+    font-size: 1.2rem;
+}
+nav ul li {
+    font-size: 1.2rem;
+}
+.porfolio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    gap: 10px;
+}
+}
+/*---------------------992px-------------------------*/
+@media screen and (min-width: 992px) {
+ .textoSuper {
+    font-size: 4rem;
+}
+.tachado {
+    font-size: 1.5rem;
+}
+nav ul li {
+    font-size: 1.6rem;
+}
+}
+    
+/*---------------------1200px-------------------------*/
+@media screen and (min-width: 1200px) {
+ .textoSuper {
+    font-size: 4.5rem;
+}
+.tachado {
+    font-size: 2rem;
+}
+nav ul li {
+    font-size: 2rem;
+}
+.porfolio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+    gap: 10px;
+}
+}
